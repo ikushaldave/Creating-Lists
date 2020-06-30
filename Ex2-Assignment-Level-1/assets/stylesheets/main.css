@@ -1,0 +1,125 @@
+@import url(./reset.css);
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap');
+
+/* ====================================
+    Globals
+===================================== */
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    font: 400 18px/1.5 'Roboto', sans-serif;
+    background-color: hsl(52,34%,74%);
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.flex {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.justify-space-between {
+    justify-content: space-between;
+}
+
+/* ====================================
+    Links
+===================================== */
+
+a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 500;
+}
+
+/* ====================================
+    Header
+===================================== */
+
+header {
+    background-color: hsl(20,95%,53%);
+}
+
+.nav-items li {
+    margin-right: 35px;
+}
+
+/* ====================================
+    Main
+===================================== */
+
+.cards {
+    margin: 25px auto;
+}
+
+.card {
+    background-color: hsl(196,100%,24%);
+    padding: 20px;
+    flex: 0 1 30%;
+    height: 500px;
+    box-shadow: 10px 10px 10px 0 rgba(0, 0, 0, 0.445);
+}
+
+.card li {
+    color: hsl(71,20%,68%);
+    margin: 10px;
+}
+
+.sub-order-list,
+.sub-unorder-list {
+    margin-left: 20px;
+}
+
+.order-item {
+    list-style: decimal inside;
+}
+
+.unorder-item {
+    list-style: disc inside;
+}
+
+.square-marker {
+    list-style: square inside;
+}
+
+.image-unorder-item {
+    list-style-image: url(../check-circle-solid.png);
+    list-style-position: inside;
+}
+
+.description-list {
+    max-width: 1050px;
+    padding: 20px 0;
+    margin: 0 auto;
+}
+
+dt {
+    margin: 5px auto;
+    font-size: 28px;
+    font-weight: 500;
+}
+
+dd {
+    color: hsl(48,11%,46%);
+    line-height: 1.6;
+    font-weight: 500;
+    margin-left: 60px;
+}
+
+/* ====================================
+    Footer
+===================================== */
+
+footer {
+    padding: 10px 0;
+    background-color: #000;
+}
