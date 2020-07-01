@@ -12,7 +12,7 @@
 }
 
 body {
-    font: 500 14px/1.5 'Roboto', sans-serif;
+    font: 500 16px/1.5 'Roboto', sans-serif;
 }
 
 .container {
@@ -53,6 +53,14 @@ body {
 
 .col-1-2 {
     flex: 0 1 46%;
+}
+
+.col-40 {
+    flex: 0 1 39%;
+}
+
+.col-60 {
+    flex: 0 1 59%;
 }
 
 .m-60 {
@@ -127,7 +135,8 @@ h4 {
     color: hsl(0,0%,35%);
 }
 
-p {
+p,
+small {
     color: hsl(0,0%,56%);
 }
 
@@ -302,4 +311,129 @@ header {
 
 .service-card .icon-block {
     background-image: linear-gradient(45deg, hsl(236,8%,35%) 50%, hsl(236,8%,39%) 50%);
+}
+
+.blog {
+    text-align: center;
+}
+
+
+.blog-items {
+    margin: 50px auto;
+}
+
+.blog h4,
+.blog p,
+.blog a {
+    margin: 10px auto;
+}
+
+.blog a {
+    background-color: #fff;
+    color: #000;
+    letter-spacing: 1px;
+    border: 2px solid rgba(128, 128, 128, 0.623);
+}
+
+.contact {
+    background-color: hsl(0,0%,96%);
+}
+
+.contact-info {
+    background-color: #fff;
+    margin: 50px auto;
+    padding: 25px;
+    text-align: left;
+    border-bottom: 2px solid rgba(134, 128, 128, 0.596);
+}
+
+.get-in-touch input,
+.get-in-touch textarea {
+    font-size: 18px;
+    font-weight: 500;
+    display: block;
+    width: 100%;
+    margin: 15px auto;
+    padding: 15px;
+    border: 1.5px solid rgba(168, 163, 163, 0.39);
+    color: rgba(168, 163, 163, 0.39);
+}
+
+.social-items li,
+.social-items a {
+    font-size: 16px;
+    color: gray;
+    vertical-align: middle;
+}
+
+.social-items a {
+    display: inline-block;
+    width: 75%;
+    margin: 0 0 0 4%;
+}
+
+.social-items i {
+    padding: 10px;
+    width: 50px;
+    height: 50px;
+    background-color: hsl(0,0%,40%);
+    border-radius: 50%;
+    line-height: 28px;
+    text-align: center;
+    color: #fff;
+}
+
+i.fa-twitter {
+    background-color: hsl(199,66%,58%);
+}
+
+i.fa-facebook-f {
+    background-color: hsl(223,55%,53%);
+}
+
+i.fa-linkedin-in {
+    background-color: hsl(206,69%,54%);
+}
+
+.contact-info .btn {
+    padding: 14px 25px;
+    letter-spacing: 2px;
+}
+
+.social-items li {
+    padding: 5px 0;
+    margin: 20px;
+    border-bottom: 1px solid rgba(168, 163, 163, 0.39);
+}
+
+.social-items li:last-child {
+    border: none;
+}
+
+.reset {
+    background-color: #fff;
+    color: rgba(43, 41, 41, 0.589);
+    border: 1px solid rgba(168, 163, 163, 0.39);
+    margin-left: 20px;
+}
+
+/* ====================================
+    Footer
+===================================== */
+
+
+
+footer {
+    background-color: hsl(0,0%,93%);
+    padding: 50px;
+    text-align: center;
+}
+
+.footer-nav a,
+.footer-nav li {
+    color: hsl(0,0%,56%);
+}
+
+.footer-nav li {
+    margin: 10px;
 }
