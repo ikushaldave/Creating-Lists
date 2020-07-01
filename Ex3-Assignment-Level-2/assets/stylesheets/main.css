@@ -1,0 +1,305 @@
+@import url(./reset.css);
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+
+/* ====================================
+    Globals
+===================================== */
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    font: 500 14px/1.5 'Roboto', sans-serif;
+}
+
+.container {
+    max-width: 1250px;
+    padding: 20px;
+    margin: 0 auto;
+}
+
+.flex {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.flex-col {
+    display: flex;
+    flex-flow: column wrap;
+}
+
+.justify-space-between {
+    justify-content: space-between;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.align-items-center {
+    align-items: center;
+}
+
+.none {
+    display: none;
+}
+
+.col-1-3 {
+    flex: 0 1 30%;
+}
+
+.col-1-2 {
+    flex: 0 1 46%;
+}
+
+.m-60 {
+    margin: 60px auto 20px;
+}
+
+/* ====================================
+    lines
+===================================== */
+
+.lines {
+    width: 400px;
+    height: 32px;
+    margin: 8px 20px;
+}
+
+.right-lines .line {
+    align-self: flex-end;
+}
+
+.left-lines .line {
+    align-self: flex-start;
+}
+
+.line {
+    display: inline-block;
+    height: 3px;
+    background-color: rgba(128, 128, 128, 0.486);
+}
+
+.l-line {
+    width: 250px;
+}
+
+.m-line {
+    width: 225px;
+}
+
+.s-line {
+    width: 200px;
+}
+
+/* ====================================
+    Typography
+===================================== */
+h1,
+h2,
+h3,
+h4 {
+    font-weight: 900;
+    text-transform: uppercase;
+}
+
+h1 {
+    font-size: 52px;
+    color: #fff;
+}
+
+h2 {
+    font-size: 28px;
+    color: hsl(0,0%,34%);
+}
+
+h3 {
+    font-size: 28px;
+    font-weight: 400;
+    color: hsl(355,74%,67%);
+}
+
+h4 {
+    font-size: 20px;
+    color: hsl(0,0%,35%);
+}
+
+p {
+    color: hsl(0,0%,56%);
+}
+
+/* ====================================
+    Links
+===================================== */
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+/* ====================================
+    Button
+===================================== */
+
+.btn {
+    display: inline-block;
+    background-color: hsl(355,74%,67%);
+    color: #fff;
+    font-size: 14px;
+    font-weight: 900;
+    text-transform: uppercase;
+    padding: 12px 18px;
+}
+
+/* ====================================
+    Header
+===================================== */
+
+header {
+    background: url(../images/banner.svg) bottom no-repeat, hsla(237,16%,24%, 0.8);
+}
+
+.logo h2,
+.nav-item {
+    text-transform: uppercase;
+    font-size: 15px;
+    font-weight: 900;
+    letter-spacing: 1.5px;
+    color: #fff;
+}
+
+.nav-item {
+    margin-left: 42px;
+}
+
+.hero {
+    text-align: center;
+    margin: 40px auto 0;
+    padding: 60px 20px 100px;
+}
+
+.hero * {
+    margin: 10px auto;
+}
+
+.sub-menu-container {
+    position: relative;
+    padding: 25px 0;
+}
+
+.dropdown {
+    width: 150px;
+    padding: 10px 5px 5px;
+    background-color: #fff;
+    position: absolute;
+    top: 5px;
+    left: -8px;
+    clip-path: polygon(50% 0, 42% 8%, 100% 8%, 100% 100%, 0 100%, 0 8%, 58% 8%);
+}
+
+.dropdown-item {
+    padding: 5px 12px;
+    border-bottom: .2px solid rgba(128, 123, 123, 0.678);
+}
+
+.dropdown-item a {
+    text-transform: capitalize;
+    color: rgba(128, 122, 122, 0.726);
+    font-size: 13px;
+    font-weight: 500;
+    letter-spacing: 0;
+}
+
+.dropdown-item:first-child {
+    margin-top: 10px;
+}
+
+.dropdown-item:last-child {
+    border: none;
+}
+
+.sub-menu i {
+    transition: transform 500ms ease-in-out;
+}
+
+.sub-menu:hover i {
+    transform: rotate(180deg);
+}
+
+.sub-menu:hover .dropdown {
+    display: initial;
+}
+
+/* ====================================
+    Main
+===================================== */
+
+.feature {
+    background-color: hsl(0,0%,96%);
+    padding: 50px 0;
+}
+
+.section-info {
+    width: 70%;
+    margin: 25px auto;
+    text-align: center;
+}
+
+.feature-card {
+    background-color: #fff;
+    padding: 20px 40px;
+    border-bottom: 2px solid rgba(134, 128, 128, 0.596);
+}
+
+.feature-card h4,
+.icon-block {
+    text-align: center;
+    margin: 20px auto;
+}
+
+.icon-block {
+    font-size: 28px;
+    color: #fff;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-image: linear-gradient(45deg, hsl(355,55%,60%) 50%, hsl(355,74%,67%) 50%);
+}
+
+.feature-card p,
+.service-card p {
+    margin: 20px auto;
+}
+
+.services {
+    padding: 50px 0 0;
+    background-color: hsl(355,74%,67%);
+}
+
+.services h2,
+.services p {
+    color: #fff;
+}
+
+.services .line {
+    background-color: #fff;
+}
+
+.service-card {
+    background-color: hsl(354,74%,72%);
+    padding: 20px 40px;
+    margin: 20px auto;
+    border-bottom: 2px solid rgba(134, 128, 128, 0.596);
+}
+
+.service-card p,
+.service-card h4 {
+    color: #fff;
+}
+
+.service-card .icon-block {
+    background-image: linear-gradient(45deg, hsl(236,8%,35%) 50%, hsl(236,8%,39%) 50%);
+}
